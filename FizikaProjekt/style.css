@@ -5,49 +5,59 @@
 }
 
 :root{
-    --background-color: rgb(250, 253, 248);
+    --background-color: rgb(214, 230, 178);
     --primary-color: rgb(250, 253, 248);
     --secondary-color: rgb(8, 0, 0);
-    --button1-color: rgb(58, 255, 235);
+    --pry-font-color: white;
+    --sec-font-color: rgb(75, 108, 55);
+    --button1-color: rgb(197, 48, 65);
+    --button2-color: rgb(75, 108, 55);
 }
-
+/*  */
 body{
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    font-family: 'inter', sans-serif;
 }
 
 header{
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    text-indent: 1rem;
     background-color: var(--primary-color);
+    color: var(--sec-font-color);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-div{
-    height: 5vh;
-    width: 100vw;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
-    border-bottom: 2px inset rgba(0, 0, 0, 0.7);
-}
+
 main{
     display: flex;
-    flex: 1;
-    flex-direction: row;
+    min-width: 80vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
+    width: 100%;
     
 }
-a{
-    width: 100px;
-    height: 100px;
-    background-color: var(--button1-color);
+main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
 }
-a:hover{
+
+main a:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 20px;
     transform: scale(1.2);
@@ -55,11 +65,24 @@ a:hover{
     border: 1px solid black;
 }
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--pry-font-color);
     position: relative;
     bottom: 0;
     min-height: 100px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--secondary-color);
+    gap: 5%;
+}
+footer div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*  */
@@ -67,8 +90,88 @@ footer{
 .tophr{
     min-width: 100%;
     height: 5px;
-    background-color: rgb(0, 38, 255);
+    background-color: rgba(0, 38, 255, 0.913);
+    /* background-color: #f97416c2; */
     border: none;
     position: relative;
     top: 0;
+}
+#h_div1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    border-bottom: 2px inset rgba(0, 0, 0, 0.7);
+    background-color: var(--primary-color);
+    gap: 5%;
+    padding-left: 1rem;
+}
+#h_div1 a{
+    text-decoration: none;
+    color: var(--sec-font-color);
+    font-weight: bold;
+}
+#h_div1 a:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+.hero{
+    min-width: 100%;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-size: larger;
+    background-color: rgb(206, 225, 163);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    color: var(--sec-font-color);
+    
+}
+.btn_group{
+    min-height: 50vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+
+}
+.quote{
+    min-height: 40vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+}
+
+#first_btn{
+    background-color: var(--button1-color);
+}
+#second_btn{
+    background-color: var(--button2-color);
+}
+.focim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(212, 57, 0);
+    color: var(--pry-font-color);
+}
+
+.plus{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
 }
