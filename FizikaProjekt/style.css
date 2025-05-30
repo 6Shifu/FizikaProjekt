@@ -91,7 +91,6 @@ footer div{
     min-width: 100%;
     height: 5px;
     background-color: rgba(0, 38, 255, 0.913);
-    /* background-color: #f97416c2; */
     border: none;
     position: relative;
     top: 0;
@@ -169,9 +168,25 @@ footer div{
     width: 100%;
     background-color: rgb(212, 57, 0);
     color: var(--pry-font-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.plus{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.tananyag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 5vh;
+    background-color: var(--primary-color);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
   
+}
+.coltan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
