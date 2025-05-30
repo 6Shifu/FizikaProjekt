@@ -18,7 +18,6 @@ body{
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
     font-family: 'inter', sans-serif;
 }
 
@@ -102,7 +101,6 @@ footer div{
     height: 5vh;
     width: 100%;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     border-bottom: 2px inset rgba(0, 0, 0, 0.7);
     background-color: var(--primary-color);
     gap: 5%;

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: rgb(214, 230, 178);
+    --primary-color: rgb(250, 253, 248);
+    --secondary-color: rgb(8, 0, 0);
+    --pry-font-color: white;
+    --sec-font-color: rgb(75, 108, 55);
+    --button1-color: rgb(197, 48, 65);
+    --button2-color: rgb(75, 108, 55);
+}
+
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'inter', sans-serif;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-indent: 1rem;
+    background-color: var(--primary-color);
+    color: var(--sec-font-color);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+main{
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+fieldset{
+    min-width: 60%;
+    min-height: 30vh;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+legend{
+    min-width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid var(--button2-color);
+    text-align: center;
+    background-color: var(--button1-color);
+    color: var(--pry-font-color);
+}
+.fs_slct{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+select{
+    min-width: 50%;
+    min-height: 5vh;
+    border: 3px solid var(--button1-color);
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+fieldset button{
+    margin: 2rem;
+    min-width: 20vh;
+    min-height: 5vh;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+}
+fieldset button:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+    background-color: yellow;
+}

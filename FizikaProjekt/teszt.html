@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teszt.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>Optika és Fénytörés Teszt</header>
+    <main>
+        <form action="" name="form">
+            <fieldset>
+                <legend>1. Mi az optika tárgya?</legend>
+                <label>
+                <input type="radio" name="k1" value="a">
+                    Az elektromos áram tanulmányozása
+                </label><br>
+                <label>
+                <input type="radio" name="k1" value="b">
+                    A hanghullámok vizsgálata
+                </label><br>
+                <label>
+                <input type="radio" name="k1" value="c">
+                    A fény természetének és viselkedésének vizsgálata
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>2. A következő állítások közül melyek igazak a fénytörésre? (Több válasz lehetséges)</legend>
+                <label><input type="checkbox" name="k2" value="a"> A fény mindig visszaverődik az üveg felületéről</label><br>
+                <label><input type="checkbox" name="k2" value="b"> A fény irányt változtathat, ha más közegbe lép</label><br>
+                <label><input type="checkbox" name="k2" value="c"> A törés mértéke függ a közeg törésmutatójától</label><br>
+                <label><input type="checkbox" name="k2" value="d"> A fénytörés nem történik meg vákuumban</label>
+            </fieldset>
+            <fieldset class="fs_slct">
+                <legend>3. Melyik lencsetípus fókuszálja egy pontba a párhuzamos fénysugarakat?</legend>
+                <select name="k3">
+                    <option value="">-- Válassz egyet --</option>
+                    <option value="gyujto">Gyűjtőlencse</option>
+                    <option value="szoro">Szórólencse</option>
+                    <option value="tükör">Tükör</option>
+                </select>
+                <button type="button" onclick="kuld()">Beküldés</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
